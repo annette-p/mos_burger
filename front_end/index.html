@@ -72,32 +72,50 @@
                 <li class="nav-item col-6">
                   <a class="nav-link active" aria-current="true" href="#">Sign In</a>
                 </li>
+                <!-- Guest Order -->
+                <!-- 
+                  TO DO - (1) enchance to multi Collapse target + (2) row 3: Member sign in
+                  ref: https://getbootstrap.com/docs/5.1/components/collapse/
+                -->
                 <li class="nav-item col-6">
-                  <a class="nav-link" href="#">Guest Order</a>
+                  <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Guest Order</a>
                 </li>
               </ul>
+              <!-- Collapse bar-->
+              <div class="collapse" id="collapseExample">
+                <!--  Guest Order (Collapse bar) -->
+                <div class="card card-body">
+                  <h4>Continue without an account</h4>
+                  <p>Express checkout with online payment as guest</p>
+                  <div class="d-grid gap-2 col-12 mx-auto">
+                    <button class="btn btn-danger fw-bold" type="button">GUEST ORDER</button>
+                  </div>
+                </div>
+                <!-- End of Guest Order (Collapse bar)  -->
+              </div>
+              <!-- End of Collapse bar-->
             </div>
+
+            <!-- row 3: Member sign in -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputPassword1" class="form-label"></label>
+                <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </div>
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-danger fw-bold" type="button">SING IN</button>
+                <a href="#" class="card-link text-center">FORGOT PASSWORD?</a>
+                <button class="btn btn-danger fw-bold" type="button">REGISTER NOW</button>
+                <a href="#" class="card-link text-center">To Enjoy Member Benefits</a>
+              </div>
+            </form>
           </div>
-          <!-- row 3: Member sign in -->
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"></label>
-              <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <label for="exampleInputPassword1" class="form-label"></label>
-              <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-            </div>
-            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-            <div class="d-grid gap-2 col-12 mx-auto">
-              <button class="btn btn-danger fw-bold" type="button">SING IN</button>
-              <a href="#" class="card-link text-center">FORGOT PASSWORD?</a>
-              <button class="btn btn-danger fw-bold" type="button">REGISTER NOW</button>
-              <a href="#" class="card-link text-center">To Enjoy Member Benefits</a>
-            </div>
-          </form>
         </div>
         <!-- End of Ordering Card -->
 
@@ -141,7 +159,7 @@
       <!-- row 2: Navbar -->
       <div class="row">
         <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
+          <ul class="nav nav-tabs card-header-tabs order-tap">
             <li class="nav-item col-6">
               <a class="nav-link active" aria-current="true" href="#">Sign In</a>
             </li>
@@ -204,6 +222,11 @@
         </div>
       </div>
     </section>
+
+    <!-- TO DO
+      1 - add footers 
+      2 - optional >> hide the form
+    -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -1,0 +1,55 @@
+        <!-- Child 1 - Ordering Card  // appear on big screen, hide on small screen -->
+        <div class="form card position-absolute; d-none d-md-block" style="width: 18rem;">
+            <!-- row 1: Header -->
+            <div class="row">
+              <div class="col">
+                <h2 class="card-title text-center">Start Ordering</h2>
+              </div>
+            </div>
+            <!-- row 2: Navbar -->
+            <div class="row">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item col-6">
+                    <a class="nav-link active" aria-current="true" href="#">Sign In</a>
+                  </li>
+                  <!-- Guest Order -->
+                  <li class="nav-item col-6">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Guest Order</a>
+                  </li>
+                </ul>
+                <!-- Collapse bar >> Guest Order -->
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <h4>Continue without an account</h4>
+                    <p>Express checkout with online payment as guest</p>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                      <button class="btn btn-danger fw-bold" type="button">GUEST ORDER</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Collapse bar >> Guest Order -->
+              </div>
+            </div>
+            <!-- row 3: Member sign in -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputPassword1" class="form-label"></label>
+                <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-danger fw-bold" type="button">SING IN</button>
+                <a href="#" class="card-link text-center">FORGOT PASSWORD?</a>
+                <button class="btn btn-danger fw-bold" type="button">REGISTER NOW</button>
+                <a href="#" class="card-link text-center">To Enjoy Member Benefits</a>
+              </div>
+            </form>
+          </div>
+          <!-- End of Ordering Card -->
